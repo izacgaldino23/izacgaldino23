@@ -3,7 +3,12 @@
 - 💼 Desenvolvedor na [Brisanet Telecomunicações](https://www.brisanet.com.br/)
 - 🌱 Nesse momento estou aperfeiçoando meu GO, e estudando NodeJS e React ambos com Typescript
 - 💞️ Sempre em busca de novos desafios
-- 📫 Você pode me contatar pelo meu [e-mail](mailto:izacgaldino@outlook.com)
+- 📫 Você pode me contatar por:
+  - [E-mail](mailto:izacgaldino@outlook.com)
+  - [Linkedin](https://www.linkedin.com/in/izacgaldino/)
+
+<!---![](https://github.com/izacgaldino23/izacgaldino23/blob/main/200w.gif)--->
+<!---<img src="https://github.com/izacgaldino23/izacgaldino23/blob/main/200w.gif" align="right">--->
 
 <!---
 izacgaldino23/izacgaldino23 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

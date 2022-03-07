@@ -1,0 +1,112 @@
+{
+    "material-icon-theme.hidesExplorerArrows": true,
+    "workbench.tree.indent": 20,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "One Monokai",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'JetBrains Mono', Fira code, Droid Sans Mono",
+    "editor.wordWrap": "on",
+    "go.formatTool": "goimports",
+    "explorer.autoReveal": false,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "terminal.integrated.profiles.osx": {
+        "hyper": {
+            "path": ""
+        }
+    },
+    "terminal.integrated.shell.osx": "/usr/bin/zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "bracketPairColorizer.showBracketsInGutter": true,
+    "bracketPairColorizer.showVerticalScopeLine": true,
+    "bracketPairColorizer.showHorizontalScopeLine": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.insertSpaceAfterCommaDelimiter": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+    "editor.formatOnSave": true,
+    // "javascript.format.enable": false,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "json.format.enable": false,
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "editor.snippetSuggestions": "none",
+    "editor.suggestSelection": "first",
+    "editor.foldingStrategy": "indentation",
+    "extensions.ignoreRecommendations": false,
+    "git.autofetch": false,
+    "git.autofetchPeriod": 3600,
+    "gitlens.hovers.currentLine.over": "line",
+    "explorer.confirmDragAndDrop": false,
+    "debug.onTaskErrors": "debugAnyway",
+    "go.lintTool": "golangci-lint",
+    // NLW5
+    "files.associations": {
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        ".prettierrc": "json",
+        "*.tsx": "typescriptreact"
+      },
+    "typescript.tsserver.log": "verbose",
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.showExitAlert": false,
+    "material-icon-theme.folders.associations": {
+        "migrations": "tools",
+        "entities": "other",
+        "repositories": "mappings",
+        "oops": "private",
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "editor.insertSpaces": false,
+    "debug.javascript.autoAttachFilter": "disabled",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.cursorBlinking": "expand",
+    "sftp.debug": true,
+    "html.format.enable": false,
+    "go.toolsManagement.autoUpdate": true,
+    "diffEditor.maxComputationTime": 0,
+    "github.gitAuthentication": false,
+    "git.pullTags": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "variable.field.go",
+                "settings": {
+                    "foreground": "#677288",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": [
+                  "meta.function.signature.go",
+                ],
+                "settings": {
+                  "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "punctuation.definition.comment.line.go",
+                "settings": {
+                    "foreground": "#8892a5",
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
+    "bracketPairColorizer.depreciation-notice": false
+}

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+overlay=~/Imagens/overlay03.png
+overlay2=~/Imagens/overlay04.png
+
+rm -r ~/Imagens/wallpapers/currentworkspace.png
+rm -r ~/Imagens/wallpapers/currentworkspaceblur.png
+rm -r ~/Imagens/wallpapers/lockbackground.png
+
+scrot ~/Imagens/wallpapers/currentworkspace.png
+convert ~/Imagens/wallpapers/currentworkspace.png -fill black -colorize 70% -blur 0x8 ~/Imagens/wallpapers/currentworkspaceblur.png
+composite -gravity SouthWest $overlay ~/Imagens/wallpapers/currentworkspaceblur.png ~/Imagens/wallpapers/lockbackground.png
+composite -gravity SouthEast $overlay2 ~/Imagens/wallpapers/lockbackground.png ~/Imagens/wallpapers/lockbackground.png
+i3lock -i ~/Imagens/wallpapers/lockbackground.png

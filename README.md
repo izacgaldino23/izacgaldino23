@@ -1,6 +1,6 @@
 - 👋 Opa, sou Izac Galdino
 - 🎓 **Analista e Desenvolvedor de Sistemas** pela [UNIVS](https://www.univs.edu.br/)
-- 💼 Desenvolvedor na [Brisanet Telecomunicações](https://www.brisanet.com.br/)
+- 💼 Desenvolvedor na **Bemobi**
 - 🌱 Nesse momento estou aperfeiçoando meu GO, e estudando NodeJS e React ambos com Typescript
 - 💞️ Sempre em busca de novos desafios
 - 📫 Você pode me contatar por:

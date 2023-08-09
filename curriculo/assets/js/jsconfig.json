@@ -1,0 +1,6 @@
+{
+	"include": [
+		"*.js",
+		"html2canvas",
+	]
+}

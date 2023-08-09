@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Rubik;
+  src: url(../font/Rubik-Regular.ttf);
+}
+* {
+  margin: 0;
+  font-family: Rubik;
+  box-sizing: border-box;
+}
+* strong {
+  font-weight: 700;
+}
+
+html, body {
+  min-height: 100vh;
+  background: rgba(57, 73, 171, 0.03);
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body #folha {
+  display: flex;
+  align-items: normal;
+  background-image: url("../img/pattern2.jpg");
+  background-size: 30%;
+  min-height: 100vh;
+  width: 23cm;
+  overflow: hidden;
+}
+body article h1, body aside h1 {
+  margin-bottom: 25px;
+}
+body article h2, body aside h2 {
+  margin-bottom: 20px;
+}
+body article h3, body aside h3 {
+  margin-bottom: 12px;
+  color: #3949AB;
+}
+body article h3 span, body aside h3 span {
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+}
+body article h4, body aside h4 {
+  margin-bottom: 10px;
+}
+body article p, body article a, body aside p, body aside a {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.95em;
+  line-height: 22px;
+}
+body article li, body aside li {
+  font-size: 0.95em;
+}
+body hr {
+  margin: 40px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 0px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+article {
+  width: 65%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+}
+article header p:not(.coracao), article header a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+article header p:not(.coracao) i, article header a i {
+  font-size: 0.9em;
+  margin-right: 10px;
+}
+article header .coracao {
+  margin: 40px 0;
+}
+article header .coracao i {
+  color: #3949AB;
+}
+article ul {
+  margin-bottom: 20px;
+}
+article ul li {
+  margin-bottom: 10px;
+  margin-left: 0;
+  text-align: justify;
+}
+article #qualificacoes h4 {
+  margin-top: 20px;
+}
+
+aside {
+  width: 35%;
+  background: #3949AB;
+  overflow: hidden;
+}
+aside * {
+  color: white !important;
+}
+aside #foto {
+  margin-top: -25px;
+  filter: drop-shadow(0px 7.5px 0px rgba(0, 0, 0, 0.2)) drop-shadow(0px 15px 0px rgba(0, 0, 0, 0.3));
+}
+aside #foto img {
+  width: 100%;
+  filter: grayscale(1);
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+}
+aside #infos {
+  padding: 30px 20px;
+  text-align: justify;
+}
+aside #infos p {
+  margin-bottom: 40px;
+}
+aside #infos h2 {
+  text-align: center;
+}
+aside #infos ul {
+  padding-left: 5px;
+  list-style: none;
+}
+aside #infos ul li {
+  margin-bottom: 5px;
+}
+aside #infos ul li:before {
+  content: "\f0da";
+  margin-right: 8px;
+  font-family: "Font Awesome 6 Free";
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: 900;
+  font-weight: var(--fa-style, 900);
+}
+aside #infos ul li ul {
+  margin-top: 6px;
+  padding-left: 10px;
+  opacity: 0.9;
+  font-size: 0.95em;
+}
+aside #infos ul li ul li:before {
+  content: "\f105";
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=index.css.map */

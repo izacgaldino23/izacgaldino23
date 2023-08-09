@@ -15,21 +15,23 @@ jobs:
   convert_to_pdf:
     runs-on: ubuntu-latest
     steps:
-      - uses: fifsky/html-to-pdf-action@master
+      - name: Generate pdfs
+        uses: fifsky/html-to-pdf-action@master
         with:
-          name: Generate pdfs
+          name: 
           htmlFile: ./curriculo/index.html
           outputFile: ./cv.pdf
           pdfOptions: '{"format": "A4"}'
       
-      # - uses: actions/upload-artifact@v1
-      #   with:
-      #     name: Upload modifications
-      #     path: izacgaldino23
+      - name: Upload modifications
+        uses: actions/upload-artifact@v1
+        with:
+          path: izacgaldino23
           
-      # - uses: softprops/action-gh-release@v1
-      #   if: startsWith(github.ref, 'refs/tags/')
-      #   with:
-      #     files: |
-      #       ./izacgaldino23/cv.pdf
+      - name: Push modifications
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            ./izacgaldino23/cv.pdf
     

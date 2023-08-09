@@ -51,9 +51,11 @@ body article h4, body aside h4 {
   margin-bottom: 10px;
 }
 body article p, body article a, body aside p, body aside a {
-  color: rgba(0, 0, 0, 0.8);
   font-size: 0.95em;
   line-height: 22px;
+}
+body article a, body aside a {
+  color: rgba(0, 0, 0, 0.8);
 }
 body article li, body aside li {
   font-size: 0.95em;
@@ -103,7 +105,7 @@ aside {
   overflow: hidden;
 }
 aside * {
-  color: white !important;
+  color: white;
 }
 aside #foto {
   margin-top: -25px;

@@ -19,17 +19,17 @@ jobs:
         with:
           name: Generate pdfs
           htmlFile: ./curriculo/index.html
-          outputFile: izacgaldino23/cv.pdf
+          outputFile: ./cv.pdf
           pdfOptions: '{"format": "A4"}'
       
-      - uses: actions/upload-artifact@v1
-        with:
-          name: Upload modifications
-          path: izacgaldino23
+      # - uses: actions/upload-artifact@v1
+      #   with:
+      #     name: Upload modifications
+      #     path: izacgaldino23
           
-      - uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: |
-            ./izacgaldino23/cv.pdf
+      # - uses: softprops/action-gh-release@v1
+      #   if: startsWith(github.ref, 'refs/tags/')
+      #   with:
+      #     files: |
+      #       ./izacgaldino23/cv.pdf
     

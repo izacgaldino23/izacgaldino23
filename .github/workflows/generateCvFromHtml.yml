@@ -26,7 +26,7 @@ jobs:
           name: 
           htmlFile: ./curriculo/index.html
           outputFile: ./cv.pdf
-          pdfOptions: '{"height": "1315px", "width": "870px", "printBackground": true}'
+          pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
       
       - name: Upload modifications
         uses: actions/upload-artifact@v1

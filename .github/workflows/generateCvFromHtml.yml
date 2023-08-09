@@ -19,14 +19,14 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 1
-          
+
       - name: Generate pdfs
         uses: fifsky/html-to-pdf-action@master
         with:
           name: 
           htmlFile: ./curriculo/index.html
           outputFile: ./cv.pdf
-          pdfOptions: '{"format": "A4"}'
+          pdfOptions: '{"format": "A4", "height": "1315px", "width": "870px", "printBackground": true}'
       
       - name: Upload modifications
         uses: actions/upload-artifact@v1

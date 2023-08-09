@@ -26,6 +26,7 @@ jobs:
       - name: Upload modifications
         uses: actions/upload-artifact@v1
         with:
+          name: my-cv
           path: izacgaldino23
           
       - name: Push modifications

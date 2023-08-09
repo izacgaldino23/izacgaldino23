@@ -20,19 +20,19 @@ jobs:
         with:
           name: 
           htmlFile: ./curriculo/index.html
-          outputFile: ./izacgaldino/cv.pdf
+          outputFile: ./cv.pdf
           pdfOptions: '{"format": "A4"}'
       
       - name: Upload modifications
         uses: actions/upload-artifact@v1
         with:
           name: my-cv
-          path: izacgaldino23/cv.pdf
+          path: ./cv.pdf
           
       - name: Push modifications
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            ./izacgaldino23/cv.pdf
+            ./cv.pdf
     

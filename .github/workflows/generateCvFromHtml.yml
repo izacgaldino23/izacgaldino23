@@ -15,6 +15,11 @@ jobs:
   convert_to_pdf:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          
       - name: Generate pdfs
         uses: fifsky/html-to-pdf-action@master
         with:

@@ -1,0 +1,35 @@
+name: Build CV from Html
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: write
+
+jobs:
+  convert_to_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: fifsky/html-to-pdf-action@master
+        with:
+          name: Generate pdfs
+          htmlFile: ./curriculo/index.html
+          outputFile: izacgaldino23/cv.pdf
+          pdfOptions: '{"format": "A4"}'
+      
+      - uses: actions/upload-artifact@v1
+        with:
+          name: Upload modifications
+          path: izacgaldino23
+          
+      - uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            ./izacgaldino23/cv.pdf
+    

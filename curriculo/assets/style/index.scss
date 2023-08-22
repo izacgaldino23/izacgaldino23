@@ -10,7 +10,7 @@ $cor-texto: rgba(black, .8);
 
 * {
 	margin: 0;
-	font-family: Rubik;
+	font-family: "Rubik";
 	box-sizing: border-box;
 	strong {
 		font-weight: 700;
@@ -83,7 +83,7 @@ body {
 }
 
 article {
-	width: 65%;
+	width: 63%;
 	background:rgba(white, .8);
 	padding: 40px;
 	header {
@@ -120,7 +120,7 @@ article {
 }
 
 aside {
-	width: 35%;
+	width: 37%;
 	background: $cor-principal;
 	overflow: hidden;
 	& * {
@@ -147,6 +147,8 @@ aside {
 		ul {
 			padding-left: 5px;
 			list-style: none;
+			display: flex;
+    		flex-wrap: wrap;
 			li {
 				margin-bottom: 5px;
 				&:before {
@@ -167,6 +169,20 @@ aside {
 							content: '\f105';
 							font-size: .9em;
 						}
+					}
+				}
+				&.titulo {
+					margin-bottom: 10px;
+				}
+				&:not(.titulo) {
+					background: rgb(white, .2);
+					display: inline-grid;
+					padding: 4px 5px;
+					border-radius: 4px;
+					font-size: .85em;
+					margin-right: 5px;
+					&:before {
+						content: '' !important;
 					}
 				}
 			}

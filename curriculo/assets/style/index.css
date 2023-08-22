@@ -4,7 +4,7 @@
 }
 * {
   margin: 0;
-  font-family: Rubik;
+  font-family: "Rubik";
   box-sizing: border-box;
 }
 * strong {
@@ -68,7 +68,7 @@ body hr {
 }
 
 article {
-  width: 65%;
+  width: 63%;
   background: rgba(255, 255, 255, 0.8);
   padding: 40px;
 }
@@ -100,7 +100,7 @@ article #qualificacoes h4 {
 }
 
 aside {
-  width: 35%;
+  width: 37%;
   background: #3949AB;
   overflow: hidden;
 }
@@ -129,6 +129,8 @@ aside #infos h2 {
 aside #infos ul {
   padding-left: 5px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 aside #infos ul li {
   margin-bottom: 5px;
@@ -150,6 +152,20 @@ aside #infos ul li ul {
 aside #infos ul li ul li:before {
   content: "\f105";
   font-size: 0.9em;
+}
+aside #infos ul li.titulo {
+  margin-bottom: 10px;
+}
+aside #infos ul li:not(.titulo) {
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-grid;
+  padding: 4px 5px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin-right: 5px;
+}
+aside #infos ul li:not(.titulo):before {
+  content: "" !important;
 }
 
 /*# sourceMappingURL=index.css.map */

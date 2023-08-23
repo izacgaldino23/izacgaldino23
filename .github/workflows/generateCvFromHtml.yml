@@ -20,24 +20,31 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Generate pdfs
+      - name: Generate PT CV
         uses: fifsky/html-to-pdf-action@master
         with:
-          name: 
           htmlFile: ./curriculo/index.html
-          outputFile: ./cv.pdf
+          outputFile: ./cv-pt.pdf
+          pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
+
+      - name: Generate EN CV
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: ./curriculo/curriculo_en.html
+          outputFile: ./cv-en.pdf
           pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
       
       - name: Upload modifications
         uses: actions/upload-artifact@v1
         with:
           name: my-cv
-          path: ./cv.pdf
+          path: ./*.pdf
           
       - name: Push modifications
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            ./cv.pdf
+            ./cv-pt.pdf
+            ./cv-en.pdf
     

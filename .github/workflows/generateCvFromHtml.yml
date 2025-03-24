@@ -35,7 +35,7 @@ jobs:
           pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
       
       - name: Upload modifications
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-cv
           path: ./*.pdf

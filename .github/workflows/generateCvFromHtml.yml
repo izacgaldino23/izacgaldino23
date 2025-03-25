@@ -25,7 +25,7 @@ jobs:
         with:
           htmlFile: ./curriculo/index.html
           outputFile: ./cv-pt.pdf
-          pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
+          pdfOptions: '{"height": "1420px", "width": "870px", "printBackground": true}'
 
       - name: Generate EN CV
         uses: fifsky/html-to-pdf-action@master

@@ -32,7 +32,7 @@ jobs:
         with:
           htmlFile: ./curriculo/curriculo_en.html
           outputFile: ./cv-en.pdf
-          pdfOptions: '{"height": "1318px", "width": "870px", "printBackground": true}'
+          pdfOptions: '{"height": "1420px", "width": "870px", "printBackground": true}'
       
       - name: Upload modifications
         uses: actions/upload-artifact@v4
